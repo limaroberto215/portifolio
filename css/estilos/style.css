@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+:root {
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #3F4E4F;
+    --cor-terciaria: #A27B5C;
+    --cor-hover: #DCD7C9;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+     box-sizing: border-box;
+    background-color:var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+.cabecalho {
+    padding: 2% 0 0% 15%;
+}
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho_link {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    color: #22d4fd;
+    text-decoration: none;
+}
+ .titulo {
+  color: #22d4fd;
+}
+.apresentaçao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentaçao__ {
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    gap: 40px;
+}
+.conteudo {
+    font-size: 1.5rem;
+    font-family:var(--font-secundaria); 
+    color: white;
+
+}
+.paragrafo {
+    font-size: 2.25rem;
+    font-family: var(--font-secundaria);
+    color: white;
+}
+.botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.h2 {
+    font-family:var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #ff4500;
+}
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16PX;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+}
+.apresentacao__links__link:hover{
+    background-color:var(--cor-hover);
+}
+.h2:hover {
+    background-color: var(--cor-secundaria);
+}
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-hover);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+}
+
+.img_perfil {
+    margin: 28px;
+    border:white;
+    width: 50%;
+    height: 550px; 
+    
+  }
+
